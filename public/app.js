@@ -7,6 +7,7 @@ import Personas from './components/Personas'
 import Skillz from './components/Skillz'
 import Confident from './components/Confident'
 import Other from './components/Other'
+import Login from './admin/Login'
 
 import store from './store'
 
@@ -43,4 +44,11 @@ render(
 		<Other />
 	</Provider>,
 	document.getElementById("Other")
+) 
+
+render(
+	<Provider store={store}>
+		<Login />
+	</Provider>,
+	document.getElementById("Login")
 ) 

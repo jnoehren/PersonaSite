@@ -11282,6 +11282,10 @@ var _Other = __webpack_require__(232);
 
 var _Other2 = _interopRequireDefault(_Other);
 
+var _Login = __webpack_require__(234);
+
+var _Login2 = _interopRequireDefault(_Login);
+
 var _store = __webpack_require__(227);
 
 var _store2 = _interopRequireDefault(_store);
@@ -11317,6 +11321,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 	{ store: _store2.default },
 	_react2.default.createElement(_Other2.default, null)
 ), document.getElementById("Other"));
+
+(0, _reactDom.render)(_react2.default.createElement(
+	_reactRedux.Provider,
+	{ store: _store2.default },
+	_react2.default.createElement(_Login2.default, null)
+), document.getElementById("Login"));
 
 /***/ }),
 /* 98 */
@@ -25182,6 +25192,77 @@ var Confident = function (_React$Component) {
 					'h1',
 					null,
 					'Personas'
+				)
+			);
+		}
+	}]);
+
+	return Confident;
+}(_react2.default.Component);
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+	return {
+		testClick: function testClick() {
+			return dispatch((0, _actions.AppActions)("Add"));
+		}
+	};
+};
+var mapStateToProps = function mapStateToProps(state) {
+	return state;
+};
+
+var DefaultApp = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Confident);
+
+exports.default = DefaultApp;
+
+/***/ }),
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(24);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(85);
+
+var _actions = __webpack_require__(226);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Confident = function (_React$Component) {
+	_inherits(Confident, _React$Component);
+
+	function Confident(props) {
+		_classCallCheck(this, Confident);
+
+		return _possibleConstructorReturn(this, (Confident.__proto__ || Object.getPrototypeOf(Confident)).call(this, props));
+	}
+
+	_createClass(Confident, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'login' },
+				_react2.default.createElement(
+					'h1',
+					null,
+					'Login'
 				)
 			);
 		}

@@ -10,6 +10,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "express": "^4.15.4",
+    "mongoose": "^4.11.8",
     "pug": "^2.0.0-rc.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -19,7 +20,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "webpack" : "webpack",
+    "webpack": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jeffrey",
