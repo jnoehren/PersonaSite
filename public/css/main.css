@@ -1,0 +1,33 @@
+html, body{
+	width: 100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+h1{
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+#wrapper{
+	font-family: Verdana;
+}
+.capsule{
+	color: white;
+	height: 45ex;
+}
+.header{
+	background-color: yellow;
+}
+.personas{
+	background-color: green;
+}
+.confident{
+	background-color: red;
+}
+.skillz{
+	background-color: blue;
+}
+.other{
+	background-color: black;
+}
